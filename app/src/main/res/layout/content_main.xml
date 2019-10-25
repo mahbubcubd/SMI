@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:showIn="@layout/app_bar_main">
+
+    <fragment
+        android:id="@+id/nav_host_fragment"
+        android:name="androidx.navigation.fragment.NavHostFragment"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:defaultNavHost="true"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:navGraph="@navigation/mobile_navigation" />
+    <ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@drawable/background"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="Year"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/year"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:background="#81FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="Month"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/month"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:background="#81FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_weight="1"
+                    android:layout_margin="10dp"
+                    android:text="Day"
+                    android:textSize="15dp"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+
+                <EditText
+                    android:id="@+id/day"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_margin="10dp"
+                    android:layout_weight="4"
+                    android:background="#81FFFFFF"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/background_dark" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="50dp">
+
+
+                <Button
+                    android:id="@+id/submit"
+                    android:layout_width="0dp"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginRight="50dp"
+                    android:layout_weight="4"
+                    android:background="#D810645A"
+                    android:text="Submit"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white" />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/result1"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:padding="15dp"
+                    android:layout_weight="1"
+                    android:background="#C10098D4"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/result2"
+                    android:layout_width="0dp"
+                    android:layout_height="100dp"
+                    android:layout_margin="20dp"
+                    android:padding="15px"
+                    android:layout_weight="1"
+                    android:background="#C10098D4"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/white"
+                    android:textSize="15dp" />
+
+
+            </LinearLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
